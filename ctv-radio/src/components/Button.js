@@ -6,7 +6,9 @@ const STYLES = ["btn--primary", "btn--outline"];
 
 const SIZES = ["btn--medium", "btn--large"];
 
-export const Button = ({ clidren, type, onClick, buttonStyle, buttonSize }) => {
+
+{/* childen, type, onClick, etc. are component placeholders */}
+export const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -16,6 +18,10 @@ export const Button = ({ clidren, type, onClick, buttonStyle, buttonSize }) => {
     : SIZES[0];
 
     return (
-      <Link to></Link>
+      <Link to='/sign-up' className='btn-mobile'>
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onCLick} type={type}>
+          {children}
+        </button>
+      </Link>
     )
 };
