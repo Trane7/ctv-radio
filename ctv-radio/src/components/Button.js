@@ -11,5 +11,11 @@ export const Button = ({ clidren, type, onClick, buttonStyle, buttonSize }) => {
     ? buttonStyle
     : STYLES[0];
 
-  check;
+    const checkButtonSize = SIZES.includes(buttonSize)
+    ? buttonSize
+    : SIZES[0];
+
+    return (
+      <Link to></Link>
+    )
 };
