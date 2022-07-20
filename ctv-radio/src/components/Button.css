@@ -18,9 +18,9 @@
 
 .btn--outline {
     background-color: transparent;
-    color: gold;
+    color: whitesmoke;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 1px solid goldenrod;
     transition: all 0.3s ease-out;
 }
 
