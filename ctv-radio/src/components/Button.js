@@ -7,7 +7,7 @@ const STYLES = ["btn--primary", "btn--outline"];
 const SIZES = ["btn--medium", "btn--large"];
 
 
-{/* STYLES and SIZE are quick placeholders for default styling */}
+/* STYLES and SIZE are quick placeholders for default styling */
 export const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle

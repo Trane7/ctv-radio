@@ -8,8 +8,7 @@
   .home,
   .support,
   .catalog,
-  .sign-up,
-  .contact {
+  .sign-up {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -43,5 +42,3 @@
     color: #fff;
     font-size: 100px;
   }
-
-  .contact{}

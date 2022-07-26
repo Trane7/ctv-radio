@@ -9,6 +9,7 @@ import './Button.css';
 
 
 
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -16,7 +17,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  {/* This pushes the links into the hamburger function as the screen srinks passed 960 */}
+  /* This pushes the links into the hamburger function as the screen srinks passed 960 */
   const showButton= () => {
     if(window.innerWidth <= 960) {
       setButton(false);
@@ -30,7 +31,7 @@ function Navbar() {
   }, []);
 
 
- {/* This resizes the button as the screen changes size */}
+ /* This resizes the button as the screen changes size */
   window.addEventListener('resize', showButton);
 
   return (
@@ -45,23 +46,18 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="./HeroSection" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/catalog" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="./component/pages/catalog" className="nav-links" onClick={closeMobileMenu}>
                 Catalog
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/shows" className="nav-links" onClick={closeMobileMenu}>
-                Shows
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-                Contact
+              <Link to="/support" className="nav-links" onClick={closeMobileMenu}>
+                Support
               </Link>
             </li>
             <li className="nav-item">

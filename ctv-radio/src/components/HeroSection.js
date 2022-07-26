@@ -13,7 +13,7 @@ function HeroSection() {
     return (
         <div className='hero-container'> {/* background video section "46:33" */}
             <h1>Welcome To CTV <span>Radio!</span></h1>
-            <p>TUNE IN!!</p>
+            <p>TUNE IN</p>
             <Link to="/shows">
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
                     Watch Show <i className='far fa-play-circle' />
