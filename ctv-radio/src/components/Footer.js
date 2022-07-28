@@ -12,9 +12,9 @@ function Footer() {
             <div className='footer-links'>
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
-                        <Link to="/HeroSection">HOME</Link>
-                        <Link to="/">CATALOG</Link>
-                        <Link to="/">SUPPORT</Link>
+                        <Link to="/component/">HOME</Link>
+                        <Link to="/component/catalog">CATALOG</Link>
+                        <Link to="/support">SUPPORT</Link>
                     </div>
                     <div className='footer-link-wrapper'>
                         <div className='footer-link-items'>
@@ -29,10 +29,10 @@ function Footer() {
 
                 <section className='footer-subscription'>
                     <p className='footer-subscription-heading'>
-                        Join the family
+                        Join the Family
                     </p>
-                    <div className='input-areas'>
-                        <Button buttonStyle='btn--primary' className="footer-button">Subscribe</Button>
+                    <div className='input-areas'> {/* Button Path needs to be fixed!!!!! */}
+                        <button  className="footer-button" onClick={'/'}>Subscribe</button>
                     </div>
                 </section>
 
@@ -41,4 +41,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Footer;

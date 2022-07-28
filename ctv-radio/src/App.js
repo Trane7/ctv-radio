@@ -1,20 +1,24 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
 import './App.css';
-
-import HomePage from './components/HeroSection';
+import Catalog from './components/Catalog';
+import Home from './components/Home';
+import Support from './components/Support';
+import { Route, Routes, Link } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-    <Router>
+    <div className='App'>
       <Navbar />
       <Routes>
-        <Route path='/' element={ <HomePage /> } />
+      <Route exact path='/component/home' component={Home} />
+      <Route exact path='/catalog' component={Catalog} />
+      <Route exact path='/support' component={Support} />
+      {/* <Route exact path='/' component={Home} /> */}
       </Routes>
-    </Router>
-    </>
+      <Footer />
+    </div>
   );
 }
 

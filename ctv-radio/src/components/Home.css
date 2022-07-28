@@ -6,7 +6,7 @@
     z-index: -1;
 }*/
 
-.hero-container {
+.home-container {
     /*background: url('img/ctvlogolag.jpg') center center/cover no-repeat;*/
     background-color: black;
     height: 100vh;
@@ -19,29 +19,29 @@
     object-fit: contain;
 }
 
-.hero-container > h1 {
+.home-container > h1 {
     color: whitesmoke;
     font-size: 100px;
     margin-top: -100px;
 }
 
-.hero-container > h1 span {
+.home-container > h1 span {
     color: rgb(192, 3, 3);
     font-family: 'Rouge Script', cursive;
 }
 
-.hero-container > p {
+.home-container > p {
     margin-top: 8px;
     color: goldenrod;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.hero-btns {
+.home-btns {
     margin-top: 32px;
 }
 
-.hero-btns .btn {
+.home-btns .btn {
     margin: 6px;
 }
 
@@ -50,19 +50,19 @@
 }
 
 @media screen and (max-width: 960px) {
-    .hero-container > h1 {
+    .home-container > h1 {
         font-size: 70px;
         margin-top: -150px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .hero-container > h1 {
+    .home-container > h1 {
         font-size: 50px;
         margin-top: -100px;
     }
 
-    .hero-container > p {
+    .home-container > p {
         font-size:  30px;
     }
 
