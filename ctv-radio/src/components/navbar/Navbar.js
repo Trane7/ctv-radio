@@ -1,72 +1,36 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../Button";
-import './Navbar.css'
-import './Button.css';
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import {Link} from 'react-router-dom'
+import '../navbar/Navbar.css'
 
 
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  /* This pushes the links into the hamburger function as the screen srinks passed 960 */
-  const showButton= () => {
-    if(window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
 
 
- /* This resizes the button as the screen changes size */
-  window.addEventListener('resize', showButton);
+const Navbar = () => {
+  const [nav, setNav] = useState(false)
+  const handleNav = () => setNav(!nav)
+
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/component/home" className="navbar-logo" onClick={closeMobileMenu}>
-             CTV <span>Radio</span>{/* image placeholder <img src="img/ctvlogosm.png" width="100" height="100" /> */}
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+      <div name='top' className='navbar'>
+          <div className="container">
+              <div className="logo">
+                  <h1>CTV <span>Radio</span></h1>
+              </div>
+
+              <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
+                  <li><Link to='/'>Home</Link></li>
+                  <li><Link to='/catalog'>Catalog</Link> </li>
+                  <li><Link to='/support'>Support</Link></li>
+                  <button>Sign In</button>
+              </ul>
+              <div className="hamburger" onClick={handleNav}>
+                  {!nav ? (<FaBars className='icon' />) : (<FaTimes className='icon' />)}
+              </div>
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to='/component/home' className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="./component/catalog" className="nav-links" onClick={closeMobileMenu}>
-                Catalog
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="./component/support" className="nav-links" onClick={closeMobileMenu}>
-                Support
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-        </div>
-      </nav>
-    </>
-  );
+      </div>
+  )
 }
 
-export default Navbar;
+export default Navbar
