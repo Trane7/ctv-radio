@@ -1,0 +1,47 @@
+.support {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgb(129, 3, 3);
+}
+
+span {
+    color: goldenrod;
+}
+
+p{
+    color: black;
+}
+
+/* .support:before {
+    content: '';
+    position: absolute;
+    background: url('../../assets/ctvlogosm.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+
+.support .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 50%;
+}
+
+.support .content p {
+    margin: 1rem 0;
+    
+}
+
+@media screen and (max-width: 940px) {
+    .support .content {
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background: rgba(196, 193, 193, 0.7);
+    }
+}
