@@ -1,4 +1,5 @@
 import React from 'react';
+import Hero from './components/hero/Hero';
 import Navbar from './components/Navbar';
 import './App.css';
 import Catalog from './components/Catalog';
