@@ -18,9 +18,10 @@ span {
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -30,9 +31,9 @@ ul {
     list-style-type: none;
 }
 
-a {
+a {           /*come back here for link coloring */
     text-decoration: none;
-    color: #fff;
+    color: whitesmoke;
 }
 
 p {
@@ -55,23 +56,7 @@ h2 {
     position: relative;
 }
 
-button {
-    font-family: 'Roboto', sans-serif;
-    padding: .7rem 1.5rem;
-    margin: 1rem 0;
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    color: rgb(192, 3, 3);
-    font-size: 1rem;
-    font-weight: 500;
-    display: flex;
-    border-radius: 4px;
-}
 
-button:hover {
-    background-color: #47dcff;
-    border: 1px solid #47dcff;
-}
 
 @media screen and (max-width: 940px) {
     h1 {
