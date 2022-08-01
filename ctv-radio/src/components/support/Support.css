@@ -2,15 +2,19 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    background: rgb(129, 3, 3);
+    background: black;
 }
 
 span {
-    color: goldenrod;
+    color: rgb(129, 3, 3);
+}
+
+h2 {
+    color: whitesmoke;
 }
 
 p{
-    color: black;
+    color: whitesmoke;
 }
 
 /* .support:before {

@@ -1,19 +1,16 @@
 import React from 'react';
-import CatalogItem from './CatalogItem';
 import './Catalog.css';
 
 
 function Catalog() {            /* This is the catalog itself */
   return (
     <div className='catalog'>
-        <h1>COMING SOON!!</h1>
-        <div className='catalog__container'>
-            <div className='catalog__wrapper'>
-                <ul className='catalog__items'>
-                    <CatalogItem
-                    src="/" 
-                    text=""
-                    />
+        <div className='container'>
+            <div className='content'>
+            <h1>CATALOG</h1>
+            <h2> COMING SOON!</h2>
+                <ul className='items'>
+                  {/* <placeholder>This is where the merch will go</placeholder> */}
                 </ul>
             </div>
         </div>
