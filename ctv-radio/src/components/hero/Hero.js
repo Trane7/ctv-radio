@@ -14,6 +14,7 @@ function Hero() {
                     <p>TUNE IN</p>
                     <div><button className='btn'>Watch Show</button></div>
                 </div>
+                
             </div>
         </div>
     )
