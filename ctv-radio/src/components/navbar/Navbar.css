@@ -14,13 +14,19 @@
 
 
 .navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
   color: #fff;
   justify-self: start;
   margin: 1rem;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
 }
+
+h1 span {
+  color: rgb(192, 3, 3);
+  font-family: 'Rouge Script', cursive;
+}
+
 
 .hamburger {
   color: goldenrod;
@@ -28,15 +34,11 @@
   padding: 1rem;
 }
 
-
-h1 span {
-  color: rgb(192, 3, 3);
-  font-family: 'Rouge Script', cursive;
-}
-
 .navbar .nav-menu {
-  display: flex;
-  padding: 1rem;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
 }
 
 .navbar ul {
@@ -53,12 +55,13 @@ h1 span {
 }
 
 button {
+  font-size: 20px;
   align-items: center;
   display: grid;
-  background-color: goldenrod;
+  background-color: rgb(238, 173, 10);
   color:  whitesmoke;
-  border-radius: 10px;
-  border: 1px solid red;
+  border-radius: 5px;
+  border: 2px solid rgb(153, 4, 4);
   justify-content: center;
 }
 
