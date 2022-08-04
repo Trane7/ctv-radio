@@ -71,6 +71,7 @@ button {
   padding: 8px 20px;
   border: 1px solid goldenrod;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 940px) {

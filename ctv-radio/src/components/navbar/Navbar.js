@@ -22,8 +22,10 @@ const Navbar = () => {
               <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
                   <li><Link to='/'>Home</Link></li>
                   <li><Link to='/catalog'>Catalog</Link> </li>
-                  <li><Link to='/footer'>Contact</Link></li>
-                  <button>Sign In</button>
+                  <li><Link to='#footer'>Contact</Link></li>
+                  <a href='https://beacons.ai/bestllc?fbclid=IwAR14xZXSDflVzS6z-65QLScEMg_-z2Zi8FS-XoOg5g4ySY3sJrCj7542Pxo'>
+                  <button>Sign Up</button>  
+                  </a>
               </ul>
               <div className="hamburger" onClick={handleNav}>
                   {!nav ? (<FaBars className='icon' />) : (<FaTimes className='icon' />)}

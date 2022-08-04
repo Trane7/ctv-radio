@@ -4,8 +4,6 @@ import "./App.css";
 import App from "./App"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import CatalogPage from './routes/CatalogPage'
-import ContactPage from './routes/ContactPage'
 
 
 const rootElement = document.getElementById('root');
@@ -16,8 +14,6 @@ root.render(
   <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/catalog' element={<CatalogPage />} />
-        <Route path='/footer' element={<ContactPage />} />
       </Routes>
   </BrowserRouter>,
 );
