@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h3>Support Us</h3>
-                        <Link to="/">Facebook</Link>
+                        <Link to={{ pathname: "https://www.facebook.com/CTVRadioMN/" }} target="_blank">Facebook</Link>
                         <Link to="/">TikTok</Link>
                         <Link to="/">Telegram</Link>
                         <Link to="/">Instagram</Link>
