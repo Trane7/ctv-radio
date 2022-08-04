@@ -2,7 +2,7 @@
   background: linear-gradient(90deg, rgb(26, 23, 23) 0%, rgb(151, 1, 1) 100%);
   width: 100%;
   height: 100px;
-  position: absolute;
+  position: fixed;
   z-index: 10;
 }
 
@@ -39,29 +39,38 @@ h1 span {
     align-items: center;
     display: flex;
     padding: 1rem;
+    text-decoration: none;
 }
+
+/* .navbar .nav-menu:hover {
+  border-bottom: 1px solid #fff;
+  transition: all 0.2s ease-out;
+} */
 
 .navbar ul {
   color: whitesmoke;
   list-style-type: none;
+  text-decoration: none;
 }
 
 .navbar li {
-  color: whitesmoke;
-  padding: 1rem;
-  font-weight: 600;
-  font-size: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
 }
 
 button {
-  font-size: 20px;
-  align-items: center;
-  display: grid;
-  background-color: rgb(238, 173, 10);
-  color:  whitesmoke;
-  border-radius: 5px;
-  border: 2px solid rgb(153, 4, 4);
-  justify-content: center;
+  background-color: var(--primary);
+  color: black;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: whitesmoke;
+  padding: 8px 20px;
+  border: 1px solid goldenrod;
+  transition: all 0.3s ease-out;
 }
 
 @media screen and (max-width: 940px) {

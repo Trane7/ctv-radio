@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./Footer.css";
+import "../footer/Footer.css";
 
 
 const Footer = () => {
+
+    // const handleClick = () =>{
+    //     console.log('button clicked');
+    // }
+
+
     return (
         <div className='footer-container'>
             <div className='footer-links'>
