@@ -1,16 +1,17 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar'
+import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
-import Support from '../components/support/Support'
 
-const SupportPage = () => {
+
+const ContactPage = () => {
   return (
     <>
         <Navbar />
-        <Support />
+        
         <Footer />
     </>
   )
 }
 
-export default SupportPage
+export default ContactPage
